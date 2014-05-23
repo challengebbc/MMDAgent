@@ -41,7 +41,7 @@
  * @return -1 if s1 < s2, 0 if s1 == s2, 1 if s1 > s2.
  */
 int
-strcasecmp(char *s1, char *s2)
+strcasecmp(char const *s1, char const *s2)
 {
   int c1, c2;
 
@@ -63,7 +63,7 @@ strcasecmp(char *s1, char *s2)
  * @return -1 if s1 < s2, 0 if s1 == s2, 1 if s1 > s2.
  */
 int
-strncasecmp(char *s1, char *s2, size_t n)
+strncasecmp(char const *s1, char const *s2, size_t n)
 {
   int c1, c2;
   do {
